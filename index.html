@@ -94,6 +94,10 @@
         <link rel="stylesheet" type="text/css" href="style.css" />
         <link rel="stylesheet" type="text/css" href="responsive.css" />
 <script>
+    window.addEventListener('beforeunload', function (e) {
+    var message = 'Are you sure you want to leave?';
+    e.returnValue = message;
+});
 document.addEventListener('contextmenu', function(e){
 alert("Sorry, right click is disabled to prevent leakage of confidential functions");
 e.preventDefault();
