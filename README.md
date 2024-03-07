@@ -19,7 +19,7 @@
 
 ## About The Project
 
-![Screen Shot](/screenshot.png)
+![Screen Shot](https://www.ankitak.com.np/Screenshot.png)
 
 This is an opensource portfolio website developed by Ankit Khatry. This is developed using HTML, CSS and Java Sscript.
 
