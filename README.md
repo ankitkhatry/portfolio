@@ -11,7 +11,7 @@
     <br/>
     <br/>
     <a href="https://www.ankitak.com.np">View Demo</a>
-    .
+    
   </p>
 </p>
 
@@ -21,7 +21,7 @@
 
 ![Screen Shot](https://www.ankitak.com.np/Screenshot.png)
 
-This is an opensource portfolio website developed by Ankit Khatry. This is developed using HTML, CSS and Java Sscript.
+This is an opensource portfolio website developed by Ankit Khatry. This is developed using HTML, CSS and Java Script.
 
 Here's why:
 
