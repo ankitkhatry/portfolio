@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function() {
             notification.remove();
         }, 300);
     }
-
+    
     // Contact Form Handling
     const contactForm = document.getElementById('contact-form');
     
@@ -313,33 +313,22 @@ document.addEventListener('DOMContentLoaded', function() {
             // Prepare email data
             const recipientEmail = "info@ankitak.com.np";
             const emailSubject = subject || "Message from Portfolio Website";
-            const emailBody = `Hello,%0D%0A%0D%0AMy name is ${encodeURIComponent(name)}.%0D%0A%0D%0A${encodeURIComponent(message)}%0D%0A%0D%0AThank you.`;
+            const emailBody = `Hello,\n\nMy name is ${name}.\n\n${message}\n\nThank you.`;
             
-            // Create Gmail URL
-            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipientEmail}&su=${encodeURIComponent(emailSubject)}&body=${emailBody}`;
+            // Create mailto link
+            const mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
             
             // Show success notification
-            showNotification('Redirecting to Gmail to send your message...', 'success', 3000);
+            showNotification('Opening your email client to send your message...', 'success', 3000);
             
-            // Open Gmail after short delay
+            // Open default email client after short delay
             setTimeout(() => {
-                window.open(gmailUrl, '_blank');
+                window.location.href = mailtoLink;
                 
                 // Reset form after redirection
                 contactForm.reset();
             }, 500);
         });
-    }
-
-    // Resume Button
-    const resumeBtn = document.getElementById('resume-btn');
-    if (resumeBtn) {
-        resumeBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            showNotification('Resume download would be implemented here.', 'info', 3000);
-        });
-    }
-});
 
 // Initialize particles.js
 document.addEventListener('DOMContentLoaded', function() {
