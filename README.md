@@ -1,6 +1,6 @@
 # Ankit Khatri KC - Portfolio
 
-![Portfolio Screenshot](Screenshot.png)
+![Portfolio Screenshot](images/portfolio.png)
 
 Welcome to my personal portfolio website! This project showcases my skills, projects, education, and hobbies as a high school student studying Computer Science at the National School of Sciences. I'm passionate about web development and enjoy building interactive and user-friendly websites.
 
